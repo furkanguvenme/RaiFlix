@@ -14,7 +14,7 @@ body {
   height: 700px;
   object-fit: cover;
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: -2;
 }
 
@@ -571,6 +571,7 @@ article div {
   padding: 10px 16px 10px 16px;
   border-radius: 0.2rem;
   font-size: 20px;
+  min-width:max-content;
 }
 
 .ply-btn:hover {
@@ -844,8 +845,6 @@ footer {
   .change {
     display: block;
   }
-
-
 }
 
 @media (max-width: 950px) {
@@ -1089,9 +1088,6 @@ footer {
     gap: 1rem;
   }
 
-  .ply-btn {
-    font-size: 0.8rem;
-  }
   /* ARTİCLE */
 
   /* HEADER */
