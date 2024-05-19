@@ -1089,6 +1089,10 @@ footer {
     align-items: flex-start;
     gap: 1rem;
   }
+
+  .ply-btn {
+    font-size: 0.8rem;
+  }
   /* ARTİCLE */
 
   /* HEADER */
