@@ -1,292 +1,334 @@
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <link href="index.css" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <script
-        src="https://kit.fontawesome.com/379336a8ba.js"
-        crossorigin="anonymous"></script>
-        <style>
-            /* width */
-            ::-webkit-scrollbar {
-            width: 7px;
-            height: 7px;
-            }
-            
-            /* Track */
-            ::-webkit-scrollbar-track {
-            background: transparent; 
-            }
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-            background: #888; 
-            }
-            
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-            }
-            </style>
-    </head>
-    <body>
-
-    <!-- Backgraund Video -->
-    <video autoplay muted loop id="myVideo">
-        <source src="/backgraund.mp4" type="video/mp4">
-    </video>
-    <!-- Backgraund Video -->
-
-    <header>
-        <div>
-
-        <!-- Menu Button -->
-        <label class="popup">
-            <input type="checkbox">
-            <div class="burger" tabindex="0">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-            <nav class="popup-window">
-            <legend>Menu</legend>
-            <ul>
-                <li>
-                <button>
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home Page</span>
-                </button>
-                </li>
-                <hr>
-                <li>
-                <button>
-                    <i class="fa-solid fa-clapperboard"></i>
-                    <span>Series</span>
-                </button>
-                </li>
-                <hr>
-                <li>
-                <button>
-                    <i class="fa-solid fa-film"></i>
-                    <span>Movies</span>
-                </button>
-                </li>
-                <hr>
-                <li>
-                <button>
-                    <i class="fa-solid fa-plus"></i>
-                    <span>New Added</span>
-                </button>
-                </li>
-                <hr>
-                <li>
-                <button>
-                    <i class="fa-solid fa-bars-staggered"></i>
-                    <span>My List</span>
-                </button>
-                </li>
-            </ul>
-            </nav>
-        </label>
-        <!-- Menu Button -->
-
-        <img src="/pictures/RaiFlix_logo.png" style="width: 100px;"/>
-        </div>
-        <nav class="header-nav">
+   <head>
+      <meta charset="UTF-8"/>
+      <link href="index.css" rel="stylesheet"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <script
+         src="https://kit.fontawesome.com/379336a8ba.js"
+         crossorigin="anonymous"></script>
+      <style>
+         /* width */
+         ::-webkit-scrollbar {
+         width: 7px;
+         height: 7px;
+         }
+         /* Track */
+         ::-webkit-scrollbar-track {
+         background: transparent; 
+         }
+         /* Handle */
+         ::-webkit-scrollbar-thumb {
+         background: #888; 
+         }
+         /* Handle on hover */
+         ::-webkit-scrollbar-thumb:hover {
+         background: #555; 
+         }
+      </style>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Backgraund Video -->
+      <div class="videop">
+      <video autoplay muted loop id="myVideo">
+         <source src="/backgraund.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+      </div>
+      <!-- Backgraund Video -->
+      <header>
+         <div>
+            <!-- Menu Button -->
+            <label class="popup">
+               <input type="checkbox">
+               <div class="burger" tabindex="0">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <nav class="popup-window">
+                  <legend>Menu</legend>
+                  <ul>
+                     <li>
+                        <button>
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home Page</span>
+                        </button>
+                     </li>
+                     <hr>
+                     <li>
+                        <button>
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <span>Series</span>
+                        </button>
+                     </li>
+                     <hr>
+                     <li>
+                        <button>
+                        <i class="fa-solid fa-film"></i>
+                        <span>Movies</span>
+                        </button>
+                     </li>
+                     <hr>
+                     <li>
+                        <button>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>New Added</span>
+                        </button>
+                     </li>
+                     <hr>
+                     <li>
+                        <button>
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <span>My List</span>
+                        </button>
+                     </li>
+                  </ul>
+               </nav>
+            </label>
+            <!-- Menu Button -->
+            <img src="/pictures/RaiFlix_logo.png" style="width: 100px;"/>
+         </div>
+         <nav class="header-nav">
             <a href="#">Homa Page</a>
             <a href="#">Series</a>
             <a href="#">Movies</a>
             <a href="#">New Added</a>
             <a href="#">My List</a>
-        </nav>
-        <div class="header-last">
-        <!-- Search Button -->
-        <div class="container">
-            <input checked="" class="checkbox" type="checkbox"> 
-            <div class="mainbox">
-                <div class="iconContainer">
-                <i class="fa-solid fa-magnifying-glass"></i>  
-                </div>
-            <input class="search_input" placeholder="search" type="text">
+         </nav>
+         <div class="header-last">
+            <!-- Search Button -->
+            <div class="container">
+               <input checked="" class="checkbox" type="checkbox"> 
+               <div class="mainbox">
+                  <div class="iconContainer">
+                     <i class="fa-solid fa-magnifying-glass"></i>  
+                  </div>
+                  <input class="search_input" placeholder="search" type="text">
+               </div>
             </div>
-        </div>
-        <!-- Search Button -->
-
-        <i class="fa-regular fa-bell"></i>
-
-        <!-- Profile -->
-        <div class="body">
-        <input type="checkbox" id="check" >
-        <figure class="avatar">
-        <picture class="avatar-main">
-            <img src="/pictures/zoro_pp.jpg"/>
-        </picture>
-        <label class="avatar-sub git">
-            <img src="/pictures/profile.png" />
-        </label>
-        <label class="avatar-sub twit">
-            <img src="/pictures/pay.png" />
-        </label>
-        <label class="avatar-sub dA">
-            <img src="/pictures/support.png" />
-        </label>
-        <label class="avatar-sub social" for="check">
-        <img class="open" src="/pictures/settings.png"/>
-        <img class="close" src="/pictures/info.png" />
-            <div class="bubble" >Click for more!</div>
-        </label>
-        </figure>
-        <div class="clarefix"></div>
-        </div>
-        <!-- Profile -->
-        </div>
-    </header>
-
-    <article>
-        <h1>One Piece</h1>
-        <p class="age">+13</p>
-        <p class="episode">+1000 episode</p>
-        <p class="time">23 min</p>
-        <p>ONE PIECE is a legendary high-seas quest unlike any other. Luffy is a young adventurer who has longed for a life of freedom ever since he can remember. He sets off from his small village on a perilous journey to find the legendary fabled treasure, ONE PIECE, to become King of the Pirates!</p>
-        <div>
-        <button class="ply-btn"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-        <button class="ply-btn"><i class="fa-solid fa-clapperboard"></i> Series Page</button>
-        </div>
-    </article>
-
-    <main>
-    <section class="step">
-    <div class="select">
-        <p class="select-btn">Series</p>
-        <p class="select-btn">View all</p>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    </section>
-    <section class="step">
-    <div class="select">
-        <p class="select-btn">Series</p>
-        <p class="select-btn">View all</p>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    </section>
-    <section class="step">
-    <div class="select">
-        <p class="select-btn">Series</p>
-        <p class="select-btn">View all</p>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <h2>One Piece</h2>
-    <p class="age">+13</p>
-    <p class="time">23 min</p>
-    <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
-    </div>
-    </section>
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
+            <!-- Search Button -->
+            <i class="fa-regular fa-bell"></i>
+            <!-- Profile -->
+            <div class="body">
+               <input type="checkbox" id="check" >
+               <figure class="avatar">
+                  <picture class="avatar-main">
+                     <img src="/pictures/zoro_pp.jpg"/>
+                  </picture>
+                  <label class="avatar-sub git">
+                  <img src="/pictures/profile.png" />
+                  </label>
+                  <label class="avatar-sub twit">
+                  <img src="/pictures/pay.png" />
+                  </label>
+                  <label class="avatar-sub dA">
+                  <img src="/pictures/support.png" />
+                  </label>
+                  <label class="avatar-sub social" for="check">
+                     <img class="open" src="/pictures/settings.png"/>
+                     <img class="close" src="/pictures/info.png" />
+                     <div class="bubble" >Click for more!</div>
+                  </label>
+               </figure>
+               <div class="clarefix"></div>
+            </div>
+            <!-- Profile -->
+         </div>
+      </header>
+      <article>
+         <h1>One Piece</h1>
+         <div class="raiting">
+         <p class="age">+13</p>
+         <p><i class="fa-brands fa-imdb episode"></i><p>+9</p></p>
+         <p class="time">23 min</p>
+         </div>
+         <p>ONE PIECE is a legendary high-seas quest unlike any other. Luffy is a young adventurer who has longed for a life of freedom ever since he can remember. He sets off from his small village on a perilous journey to find the legendary fabled treasure, ONE PIECE, to become King of the Pirates!</p>
+         <div>
+            <button class="ply-btn"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+            <button class="ply-btn"><i class="fa-solid fa-clapperboard"></i> Series Page</button>
+         </div>
+      </article>
+      <main>
+         <section class="step">
+            <div class="select">
+               <p class="select-btn">Series</p>
+               <p class="select-btn">View all</p>
+            </div>
+            <div class="movies">
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+            </div>
+         </section>
+         <section class="step">
+            <div class="select">
+               <p class="select-btn">Movies</p>
+               <p class="select-btn">View all</p>
+            </div>
+            <div class="movies">
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+            </div>
+         </section>
+         <section class="step">
+            <div class="select">
+               <p class="select-btn">Recommended for you</p>
+               <p class="select-btn">View all</p>
+            </div>
+            <div class="movies">
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+               <div class="movie" style="background-image: url('/pictures/one_piece.1.jpg'); background-repeat: no-repeat; background-size: cover;">
+                  <h2>One Piece</h2>
+                  <p class="age">+13</p>
+                  <p class="time">23 min</p>
+                  <button class="ply"><i class="fa-regular fa-circle-play"></i> Play Now</button>
+               </div>
+            </div>
+         </section>
+      </main>
+   </body>
+      <footer>
+         <div class="footer-div">
+         <div class="last-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="last-nav">
+            <nav>
+                <a href="#">Sesli Betimleme</a>
+                <a href="#">Yatırımcı İlişkileri</a>
+                <a href="#">Yasal Hükümler</a>
+            </nav>
+            <nav>
+                <a href="#">Yardım Merkezi</a>
+                <a href="#">İş İmkanları</a>
+                <a href="#">Çerez Tercihleri</a>
+            </nav>
+            <nav>
+                <a href="#">Hediye Kartları</a>
+                <a href="#">Kullanım Koşulları</a>
+                <a href="#">Kurumsal Bilgiler</a>
+            </nav>
+            <nav>
+                <a href="#">Medya Merkezi</a>
+                <a href="#">Gizlilik</a>
+                <a href="#">Bize Ulaşın</a>
+            </nav>
+            </div>
+            <!-- Contact -->
+            <div class="tooltip-container">
+            <span class="tooltip">furkanguven.me@gmail.com</span>
+            <span class="info">Contact İnformation</span>
+            </div>
+            <!-- Contact -->
+            <div  class="hzm">
+            <p class="hizmet">Hizmet Kodu</p>
+            <p class="business">© 1997-2024 Witflix, Inc.</p>
+            </div>
+         </div>
+     </footer>
 </html>
